@@ -1,6 +1,7 @@
 
 mod urdf_io;
 
+use bevy::prelude::*;
 use clap::Parser;
 
 // CLI args parsing
@@ -22,6 +23,10 @@ fn main() -> anyhow::Result<()>{
     let ee = urdf_io::end_effector_name(args.ee, &urdf);
     println!("robot name = {0}", urdf.name);
     println!("end effector name (optional) = {0}", ee);
+
+    // Bevy Hello WOrld
+    //App::new().add_plugins(DefaultPlugins).run();
+    App::new().add_plugins(DefaultPlugins).run();
 
     Ok(())
 }
