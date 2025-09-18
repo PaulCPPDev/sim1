@@ -25,7 +25,6 @@ fn main() -> anyhow::Result<()>{
     println!("end effector name (optional) = {0}", ee);
 
     // Bevy Hello WOrld
-    //App::new().add_plugins(DefaultPlugins).run();
     App::new().add_plugins(DefaultPlugins).run();
 
     Ok(())
